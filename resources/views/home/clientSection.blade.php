@@ -24,9 +24,9 @@
                                 Customer
                             </h6>
                             <p>
-                                Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde
-                                quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum
-                                ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                                As a customer, I am very satisfied with the service provided by Virtual Fit Club. I have
+                                been using their services for the past 2 years and I have never been disappointed. I
+                                would recommend this to anyone who is looking for a good fitness club.
                             </p>
                         </div>
                     </div>
@@ -48,9 +48,9 @@
                                 Customer
                             </h6>
                             <p>
-                                Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde
-                                quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum
-                                ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                                As a customer, I am very satisfied with the service provided by Virtual Fit Club. I have
+                                been using their services for the past 2 years and I have never been disappointed. I
+                                would recommend this to anyone who is looking for a good fitness club.
                             </p>
                         </div>
                     </div>
@@ -72,9 +72,9 @@
                                 Customer
                             </h6>
                             <p>
-                                Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde
-                                quis reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum
-                                ducimus ad labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                                As a customer, I am very satisfied with the service provided by Virtual Fit Club. I have
+                                been using their services for the past 2 years and I have never been disappointed. I
+                                would recommend this to anyone who is looking for a good fitness club.
                             </p>
                         </div>
                     </div>

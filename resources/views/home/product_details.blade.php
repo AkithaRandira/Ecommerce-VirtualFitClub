@@ -3,6 +3,8 @@
 
 <head>
     <!-- Basic -->
+
+    <base href="/public">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
@@ -29,30 +31,46 @@
         @include('home.header')
         <!-- end header section -->
 
-        <!-- slider section -->
-        @include('home.slider')
-        <!-- end slider section -->
+        <div class="col-sm-6 col-md-4 col-lg-4" style="margin: auto; width: 50%; padding:30px">
+
+
+            <div class="img-box">
+                <img src="product/{{ $product->image }}" alt="">
+            </div>
+            <div class="detail-box">
+                <h5>
+                    {{ $product->title }}
+                </h5>
+                <h6>
+                    Lkr {{ $product->price }}
+                </h6>
+
+                <h6>
+                    Product Category: {{ $product->category }}
+                </h6>
+                <h6>
+                    Product Details: {{ $product->description }}
+                </h6>
+
+                
+                <form action="{{url('add_cart',$product->id)}}" method="POST">
+
+                    @csrf
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="number" name="quantity" 
+                            value="1" min="1" style="width:100px">
+                        </div>
+                    <div class="col-md-4">
+                        <input type="submit" value="Add to Cart"  >
+                    </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
     </div>
-
-    <!-- product section -->
-    @include('home.products')
-    <!-- end product section -->
-
-    <!-- arrival section -->
-    @include('home.newArrivel')
-    <!-- end arrival section -->
-
-    <!-- why section -->
-    @include('home.why')
-    <!-- end why section -->
-
-    <!-- subscribe section -->
-    @include('home.subscribe')
-    <!-- end subscribe section -->
-
-    <!-- client section -->
-    @include('home.clientSection')
-    <!-- end client section -->
 
 
     <!-- footer start -->

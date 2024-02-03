@@ -2,7 +2,7 @@
     <div class="container">
         <div class="heading_container heading_center">
             <h2>
-                Why Shop With Us
+                Why Us
             </h2>
         </div>
         <div class="row">
@@ -104,7 +104,7 @@
                             Fast Delivery
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            variations of dilivery options available island wide
                         </p>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                             Free Shiping
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            Free shipping all over the world from Sri lanka.
                         </p>
                     </div>
                 </div>
@@ -244,10 +244,10 @@
                     </div>
                     <div class="detail-box">
                         <h5>
-                            Best Quality
+                            Personalized Trainers
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            well trained and experienced trainers
                         </p>
                     </div>
                 </div>
