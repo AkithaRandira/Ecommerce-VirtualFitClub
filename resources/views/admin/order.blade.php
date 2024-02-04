@@ -47,19 +47,20 @@
 
                 <table>
                     <tr>
-                        <th>Customer Name</th>
+                        <th>Customer</th>
                         <th>Email</th>
                         <th>Address</th>
                         <th>Phone</th>
                         <th>Product Name</th>
-                        <th>Quantity</th>
+                        <th>Qut</th>
                         <th>Price</th>
                         <th>Payment Status</th>
                         <th>Delivary Status</th>
                         <th>Image</th>
-                        <th>
-                            delivared
-                        </th>
+                        <th>Delivared</th>
+                        <th>Print</th>
+                      
+                        
 
                     </tr>
 
@@ -95,6 +96,12 @@
                             </td>
                             
 
+                            <td>
+                                <a href="{{url('print_pdf',$order->id)}}"
+                                    onclick="return confirm
+                                    ('Are you sure you want to print this order !!')"
+                                    class="btn btn-secondary" style="color: red">Print</a>
+                            </td>
 
                         </tr>
                     @endforeach

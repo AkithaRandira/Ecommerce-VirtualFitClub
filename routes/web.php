@@ -53,6 +53,8 @@ route ::get('/order',[AdminController::class,'order']);
 
 route ::get('/delivared/{id}',[AdminController::class,'delivared']);
 
+route ::get('/print_pdf/{id}',[AdminController::class,'print_pdf']);
+
 
 
 
