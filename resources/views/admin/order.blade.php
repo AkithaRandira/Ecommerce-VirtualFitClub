@@ -57,6 +57,9 @@
                         <th>Payment Status</th>
                         <th>Delivary Status</th>
                         <th>Image</th>
+                        <th>
+                            delivared
+                        </th>
 
                     </tr>
 
@@ -72,7 +75,26 @@
                             <td>{{ $order->payment_status }}</td>
                             <td>{{ $order->delivary_status }}</td>
                             <td>
-                                <img src="/product/{{$order->image}}" alt="Image" width="100px" height="100px"></td>
+                                <img src="/product/{{$order->image}}" 
+                                alt="Image" width="100px" height="100px">
+                            </td>
+                            <td>
+                                @if ($order->delivary_status=='processing')
+                                    
+                                
+                                <a href="{{url('delivared',$order->id)}}"
+                                    onclick="return confirm
+                                    ('Are you sure this product is delivared !!')"
+                                    class="btn btn-primary">Delivared</a>
+
+                                   
+
+                                    @else
+                                    <p class="btn btn-success">Delivared</p>
+                                    @endif
+                            </td>
+                            
+
 
                         </tr>
                     @endforeach

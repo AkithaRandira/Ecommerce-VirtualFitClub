@@ -51,6 +51,8 @@ route ::post('/update_product_confirm/{id}',[AdminController::class,'update_prod
 
 route ::get('/order',[AdminController::class,'order']);
 
+route ::get('/delivared/{id}',[AdminController::class,'delivared']);
+
 
 
 
@@ -70,4 +72,6 @@ route ::get('/cash_order',[HomeController::class,'cash_order']);
 route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
 
 Route::post('stripe/{totalprice}',[HomeController::class,'stripePost'])->name('stripe.post');
+
+
 

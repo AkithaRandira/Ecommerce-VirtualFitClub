@@ -120,4 +120,15 @@ class AdminController extends Controller
 
         return view('admin.order',compact('order'));
     }
+
+    public function delivared($id)
+    {
+        $order=order::find($id);
+        $order->delivary_status="delivered ";
+        $order->payment_status="paid";
+        $order->save();
+        return redirect()->back();
+    }
+
+
 }
