@@ -37,9 +37,20 @@ class HomeController extends Controller
                 $total_revenue=$order->price + $total_revenue;
             }
 
+            $total_processing=order::where('delivary_status','=','processing')->count();
+
+           $total_supplement=Product::where('category','=','Supplement')->count();
+              $total_protein=Product::where('category','=','Whey Protein')->count();
+                $total_mass=Product::where('category','=','Mass Gainers')->count();
+                $total_preworkout=Product::where('category','=','Pre-Workout')->count();
 
 
-            return view('admin.home',compact('total_product','total_order','total_user'));
+                $total_delivered=order::where('delivary_status','=','delivered')->count();
+
+
+            return view('admin.home',compact('total_product',
+            'total_order','total_user','total_revenue','total_supplement',
+            'total_protein','total_mass','total_preworkout', 'total_delivered','total_processing'));
         }
         else
         {
@@ -199,6 +210,28 @@ class HomeController extends Controller
         Session::flash('success', 'Payment successful!');
               
         return back();
+    }
+    public function show_order()
+    {
+       if(Auth::id())
+       {
+        $user=Auth::user();
+        $userid=$user->id;
+        $order=order::where('user_id','=',$userid)->get();
+        return view('home.order',compact('order'));
+       }
+       else
+       {
+           return redirect('login');
+       }
+    }
+
+    public function cancel_order($id)
+    {
+        $order=order::find($id);
+        $order->delivary_status='canceled';
+        $order->save();
+        return redirect()->back();
     }
 
 }

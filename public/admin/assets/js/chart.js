@@ -89,7 +89,7 @@ $(function() {
   
   var doughnutPieData = {
     datasets: [{
-      data: [30, 40, 30],
+      data: [Supplement, total_protein, total_mass, total_preworkout],
       backgroundColor: [
         'rgba(255, 99, 132, 0.5)',
         'rgba(54, 162, 235, 0.5)',
@@ -110,9 +110,10 @@ $(function() {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-      'Pink',
-      'Blue',
-      'Yellow',
+      'Supplement',
+      'total_protein',
+      'total_mass',
+      'total_preworkout',
     ]
   };
   var doughnutPieOptions = {
