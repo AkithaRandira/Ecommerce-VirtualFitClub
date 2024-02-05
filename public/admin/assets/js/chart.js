@@ -89,7 +89,7 @@ $(function() {
   
   var doughnutPieData = {
     datasets: [{
-      data: [Supplement, total_protein, total_mass, total_preworkout],
+      data: [20,30,40,10],
       backgroundColor: [
         'rgba(255, 99, 132, 0.5)',
         'rgba(54, 162, 235, 0.5)',
