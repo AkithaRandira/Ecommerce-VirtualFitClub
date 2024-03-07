@@ -1,3 +1,25 @@
+<h1 align="center" id="title">Virtual Fit Club</h1>
+
+<p align="center"><img src="https://socialify.git.ci/AkithaRandira/Ecommerce-VirtualFitClub/image?language=1&amp;name=1&amp;owner=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+
+<p id="description">The Virtual Fit Club (Fitness Platform) CRM is a customer relationship management system tailored for businesses operating in the fitness industry. It serves as a centralized platform for managing various aspects of the fitness business including product management order processing customer relations and analytics.</p>
+
+<h2>Project Screenshots:</h2>
+
+<img src="" alt="project-screenshot" width="400" height="400/">
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Laravel
+*   Boostrap
+*   Tailwind CSS
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
